@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://github.com/JulianLivrone/Profile-card-component)
+- Live Site URL: [Live site URL here](https://julianlivrone.github.io/Profile-card-component/)
 
 ## My process
 
