@@ -1,0 +1,138 @@
+/* =================
+   Table of Contents
+
+   1. Global Styles: Global styles for my project.
+
+   2. Layout: Styles related with layout, e.g. header, nav, main, section, footer, div, etc.
+
+   3. Typography: Styles related to text, e.g. h1, h2, p, etc.
+
+   4. Assets: Styles related with the assets of the project, e.g. images, svg, etc.
+   ================= */
+
+/* =================
+   1. Global Styles
+   ================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --dark-gray: hsl(0, 0%, 59%);
+
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  overflow: hidden;
+  position: relative;
+  background: url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg'), var(--dark-cyan); /* Set up both images and Dark Cyan as the background*/
+  background-repeat: no-repeat;
+  /* First Image position (right 52vw bottom 25vh), Second Image position (left 46vw top 52vh)*/
+  background-position: right 52vw bottom 25vh, left 46vw top 52vh;
+}
+
+/* =================
+   1. Layout
+   ================= */
+.container {
+  width: 21rem;
+  background-color: white;
+  border-radius: 1em;
+  position: relative;
+}
+
+.content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-details-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  position: relative;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.account-details-list::before {
+  content: '';
+  width: 111%;
+  position: absolute;
+  border-top: 1px solid black;
+}
+
+/* =================
+   3. Typography
+   ================= */
+.title {
+  margin-top: 1.5em;
+  font-size: 1.5rem;
+}
+
+.age {
+  color: var(--dark-gray);
+  font-weight: lighter;
+}
+
+.sub-title {
+  margin-top: 0.75em;
+  margin-bottom: 1.75em;
+  font-size: 1rem;
+  color: var(--dark-gray);
+  font-weight: lighter;
+}
+
+.number {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.category {
+  font-weight: normal;
+  color: var(--dark-grayish-blue);
+  font-size: 0.75em;
+}
+
+.account-details-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =================
+   4. Assets
+   ================= */
+.card-background {
+  width: 100%;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.profile-image {
+  border-radius: 100000000px;
+  border: 5px solid white;
+  position: absolute;
+  left: 35%;
+  top: 23%;
+}
